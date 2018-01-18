@@ -68,7 +68,7 @@ def split_html(pattern, string):
 
 def write_file(data):
 	with open('parsing_from_fl.html', 'a') as file:
-		file.write('<h2>' + str(data['id']) + '.' +  'Заголовок: ' + data['title'] + '</h2><br>' +
+		file.write('<h2>' + str(data['id']) + '.' +  ' Заголовок: ' + data['title'] + '</h2><br>' +
 		'<strong>Описание:</strong> ' + data['description'] + '<br>' +
 		'<strong>Бюджет:</strong> ' + data['budget'] + '<br>' +
 		'<strong>Время:</strong> ' + data['time'] +  '<br>' +
@@ -84,7 +84,7 @@ def main():
 
 	while True:
 		print_post = q.get()
-		print(str(print_post['id']) + '. ' +  ' Заголовок: ' + print_post['title'] + '\n' +
+		print(str(print_post['id']) + '.' +  ' Заголовок: ' + print_post['title'] + '\n' +
 		'Описание: ' + print_post['description'] + '\n' +
 		'Бюджет: ' + print_post['budget'] + '\n' +
 		'Время: ' + print_post['time'] +  '\n' +
